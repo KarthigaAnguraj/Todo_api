@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 
 @RestController 
-//https://localhost:8080/todos
+//http://localhost:8080/todos
 @RequestMapping ("/todos")
 public  class TodoController {
     private TodoService todoSer;
@@ -23,7 +23,7 @@ public  class TodoController {
     {
         this.todoSer=todoSer;
     }
-    //https://localhost:8080/todos/createTodo
+    //http://localhost:8080/todos/createTodo
     @PostMapping("/createTodo")
     public TodoModel1 createTodo(@RequestBody TodoModel1 task)
     {
